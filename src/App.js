@@ -29,7 +29,7 @@ function App() {
     e.preventDefault();
     try {
       const parsedData = JSON.parse(inputData);
-      const response = await fetch('http://localhost:4000/bfhl', {
+      const response = await fetch('https://bfhl-backend-m5fx.onrender.com/bfhl', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
